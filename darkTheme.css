@@ -1,64 +1,36 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
 
-h1,h2:hover {
+/* CSS for dark mode */
+.dark-theme h1, .dark-theme h2:hover {
     color: rgb(255, 255, 255);  
 }
 
-.lead {
+.dark-theme .lead {
     text-align: center;
     color: #e7e7e7;
 }
 
-iframe {
+.dark-theme iframe {
     border: 1px solid rgb(255, 255, 255);
 }
 
-.navbar-nav .nav-link-scroll.active::after {
+.dark-theme .navbar-nav .nav-link-scroll.active::after {
     background-color: #ffffff;
 }
 
-/* CSS for the button */
-.btn-pink {
+.dark-theme .btn {
     color: #ffff;
     border: solid #efefef 1px;
 }
 
-.btn-pink:hover {
+.dark-theme .btn-pink {
+    color: #ffff;
+    border: solid #efefef 1px;
+}
+
+.dark-theme .btn-pink:hover {
     background: -webkit-linear-gradient(rgb(225, 225, 225),rgb(211, 211, 211));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-.btn.btn-outline-dark {
-    color: rgb(255, 255, 255) !important;
-    border: 2px solid rgb(255, 255, 255);
-}
-
-.btn.btn-outline-dark:hover {
-    transition: all 1s ease-in;
-    color: rgb(255, 255, 255) !important;
-    background: -webkit-linear-gradient(rgb(225, 225, 225),rgb(211, 211, 211));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-/* CSS for the skills overlay */
-.skill-overlay {
-    background: rgba(189, 188, 188, 0.7);
-}
-  
-.skill-overlay-content {
-    text-align: center;
-    color: #fff;
-}
-
-/* CSS for the footer */
-.footer-align {
-    color: #e7e7e7;
-}
-
-.footer-hover:hover {
-    color: rgb(255, 255, 255);  
-} 

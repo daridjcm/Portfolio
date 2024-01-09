@@ -3,31 +3,39 @@ window.onload = function () {
   var bodyElement = document.querySelector('body');
   var savedTheme = localStorage.getItem('theme');
 
+  // Set default theme to light if not saved previously
+  if (!savedTheme) {
+    savedTheme = 'light';
+    localStorage.setItem('theme', 'light');
+  };
+
+  // Apply light theme styles by default
   if (savedTheme === 'dark') {
-    bodyElement.classList.add('dark-theme');
-    unloadDarkThemeStyles();
-  } else {
-    loadDarkThemeStyles();
-  }
+    applyDarkThemeStyles();
+    bodyElement.classList.add('dark-theme'); // Agregar la clase al cargar si el tema oscuro está activo
+  };
 
   darkModeBtn.addEventListener('click', function () {
+    // Toggle the dark theme class on the body element
     bodyElement.classList.toggle('dark-theme');
-    bodyElement.classList.toggle('dark-text');
-    bodyElement.classList.toggle('dark-background');
 
+    // Check if the dark theme is now active
     var currentTheme = bodyElement.classList.contains('dark-theme') ? 'dark' : 'light';
+    
+    // Update the data-bs-theme attribute
     bodyElement.setAttribute('data-bs-theme', currentTheme);
 
-    localStorage.setItem('theme', currentTheme === 'dark' ? 'dark' : 'light');
+    // Update the localStorage with the current theme
+    localStorage.setItem('theme', currentTheme);
 
+    // Remove existing dark theme styles and apply new ones
+    unloadDarkThemeStyles();
     if (currentTheme === 'dark') {
-      loadDarkThemeStyles();
-    } else {
-      unloadDarkThemeStyles();
+      applyDarkThemeStyles();
     };
   });
 
-  function loadDarkThemeStyles() {
+  function applyDarkThemeStyles() {
     var linkElement = document.createElement('link');
     linkElement.rel = 'stylesheet';
     linkElement.href = 'darkTheme.css';
@@ -39,6 +47,6 @@ window.onload = function () {
     var existingLink = document.getElementById('dark-theme-styles');
     if (existingLink) {
       existingLink.parentNode.removeChild(existingLink);
-    }
-  }
+    };
+  };
 };
