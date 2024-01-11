@@ -5,18 +5,39 @@ document.addEventListener("DOMContentLoaded", function () {
   let modal = new bootstrap.Modal(document.getElementById("staticBackdrop"));
   let bodyElement = document.querySelector("body");
 
-  modal.show();
+  let userDecisionMade = localStorage.getItem("userDecisionMade");
+
+  if (!userDecisionMade) {
+    modal.show();
+  } else {
+    let savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "light" || savedTheme === "dark") {
+      setTheme(savedTheme);
+    }
+  }
+
   let modalButtons = document.querySelectorAll("#staticBackdrop button");
   modalButtons.forEach(function (btn) {
     btn.addEventListener("click", function () {
+      setTheme(btn.id);
       modal.hide();
+      userDecisionMade = true;
+      localStorage.setItem("userDecisionMade", userDecisionMade);
     });
   });
+
+  function setTheme(theme) {
+    if (theme === "dark") {
+      setDarkTheme();
+    } else {
+      setLightTheme();
+    }
+    localStorage.setItem("theme", theme);
+  }
 
   function setDarkTheme() {
     bodyElement.classList.add("dark-theme");
     bodyElement.setAttribute("data-bs-theme", "dark");
-    localStorage.setItem("theme", "dark");
     unloadStyles();
     applyDarkThemeStyles();
   };
@@ -24,7 +45,6 @@ document.addEventListener("DOMContentLoaded", function () {
   function setLightTheme() {
     bodyElement.classList.remove("dark-theme");
     bodyElement.setAttribute("data-bs-theme", "light");
-    localStorage.setItem("theme", "light");
     unloadStyles();
   };
 
@@ -43,9 +63,6 @@ document.addEventListener("DOMContentLoaded", function () {
     };
   };
 
-  darkModeBtn.addEventListener("click", setDarkTheme);
-  lightModeBtn.addEventListener("click", setLightTheme);
-
   btnMode.addEventListener("click", function () {
     if (bodyElement.classList.contains("dark-theme")) {
       setLightTheme();
@@ -53,12 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
       setDarkTheme();
     };
     modal.hide();
+    userDecisionMade = true;
+    localStorage.setItem("userDecisionMade", userDecisionMade);
   });
-
-  let savedTheme = localStorage.getItem("theme");
-  if (savedTheme === "light") {
-    setLightTheme();
-  } else {
-    setDarkTheme();
-  }
 });
