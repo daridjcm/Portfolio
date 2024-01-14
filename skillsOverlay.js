@@ -1,8 +1,8 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
   const skills = document.querySelectorAll('.skill');
 
-  skills.forEach(function (skill) {
-    skill.addEventListener('click', function () {
+  skills.forEach(function(skill) {
+    skill.addEventListener('click', function() {
       const title = skill.getAttribute('data-title');
       const description = skill.getAttribute('data-description');
       const imageSrc = skill.querySelector('.skill-image').getAttribute('src');
@@ -31,19 +31,19 @@ document.addEventListener('DOMContentLoaded', function () {
       overlay.appendChild(overlayContent);
       document.body.appendChild(overlay);
 
-      overlay.addEventListener('click', function () {
+      overlay.addEventListener('click', function() {
         overlay.remove();
       });
     });
   });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
   const skillImages = document.querySelectorAll('.skill-image');
 
-  skillImages.forEach(function (image) {
-      image.addEventListener('click', function () {
-          skillImages.forEach(function (img) {
+  skillImages.forEach(function(image) {
+      image.addEventListener('click', function() {
+          skillImages.forEach(function(img) {
               img.style.maxWidth = '100%';
               img.style.maxHeight = '100%';
               img.style.boxShadow = 'none';
