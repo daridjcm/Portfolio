@@ -1,0 +1,86 @@
+body {
+    background: #efefef;
+}
+
+/* CSS for the modal */
+.modal {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    width: 60%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+
+
+/* CSS for the game */
+.centerElements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    transition: all 1s;
+    background-color: rgb(147, 199, 255);
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 3px solid #000000;
+    border-radius: 3%;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:focus {
+    transition: all 0.30s;
+    border: 3px solid #386b8d;
+}
+
+#myElement2 {
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+    transition: 1s;
+    border-radius: 3%;
+    cursor: pointer;
+}
+
+img:hover {
+    transition: 1s;
+    box-shadow:  20px 20px 35px #9b9b9b, -20px -20px 35px #ffffff;
+    rotate: 5deg;
+}
