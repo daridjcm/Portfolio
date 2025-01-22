@@ -1,0 +1,67 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Stone, Paper or Scissors",
+      "desc": "Website Game Stone, Paper or Scissors made with HTML, CSS and JS Pure.",
+      "link": "https://github.com/Daridjcm/Portfolio/tree/main/projectsPortfolio/StonePaperScissors",
+      "img": "/images/id1.png"
+    },
+    {
+      "id": 2,
+      "title": "Pokédex",
+      "desc": "Website Pokédex API made with HTML, CSS and JS Pure.",
+      "link": "https://github.com/Daridjcm/Portfolio/tree/main/projectsPortfolio/Pokédex",
+      "img": "/images/id2.png"
+    },
+    {
+      "id": 3,
+      "title": "Calculator",
+      "desc": "Website Calculator made with HTML, CSS and JS Pure.",
+      "link": "https://github.com/Daridjcm/Portfolio/tree/main/projectsPortfolio/Calculator",
+      "img": "/images/id3.png"
+    },
+    {
+      "id": 4,
+      "title": "The Button Blue",
+      "desc": "Website Game of clicks made with HTML, CSS and JS Pure.",
+      "link": "https://github.com/Daridjcm/Portfolio/tree/main/projectsPortfolio/ButtonBlue",
+      "img": "/images/id4.png"
+    },
+    {
+      "id": 5,
+      "title": "Menu Dishes",
+      "desc": "Menú with or whithout taxes, made with HTML, CSS and JS Pure.",
+      "link": "https://github.com/Daridjcm/Portfolio/tree/main/projectsPortfolio/Menu",
+      "img": "/images/id5.png"
+    },
+    {
+      "id": 6,
+      "title": "todo-list-app",
+      "desc": "Web-App notes list, made with HTML, TailwindCSS and JS Pure.",
+      "link": "https://notes-list-app.vercel.app/index.html",
+      "img": "/images/id6.png"
+    },
+    {
+      "id": 7,
+      "title": "E-commerce StyliShoes",
+      "desc": "Web-App Ecommerce about Shoes, made with Bootstrap5.",
+      "link": "https://ecommerce-one-rust.vercel.app/index.html",
+      "img": "/images/id7.png"
+    },
+    {
+      "id": 8,
+      "title": "E-commerce DeylaShop",
+      "desc": "Web-App Ecommerce about grocery, beauty, furnitures. Made with Astro, TailwindCSS.",
+      "link": "https://deyla-shop.vercel.app/index.html",
+      "img": "/images/id8.png"
+    },
+    {
+      "id": 9,
+      "title": "Weather",
+      "desc": "Web-App about the weather, made with HTML, CSS and JS Pure.",
+      "link": "https://daridjcm.github.io/Weather/",
+      "img": "/images/id9.png"
+    }
+  ]
+}
