@@ -1,10 +1,10 @@
-<div class="p-10 grid grid-cols-4 gap-4 w-full" id="project-list">
+<div class="p-10 grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-4 w-full" id="project-list">
 
 </div>
 
 <script>
     function getAPI() {
-        fetch("../../projects.json")
+        fetch("/projects.json")
             .then((response) => response.json())
             .then((data) => displayData(data))
             .catch((error) => {
@@ -23,7 +23,7 @@
                 projectListContainer.innerHTML += card;
             });
         } else {
-            console.error("La propiedad 'products' no es un array", data);
+            console.error("The property projects it not array", data);
         }
     }
 
