@@ -7,4 +7,6 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
     site: 'https://example.com',
     integrations: [tailwind()],
+    base: '/',
+    server: ({ command }) => ({ port: command === 'dev' ? 4321 : 4000 }),
 });

@@ -1,0 +1,149 @@
+{
+  "_comment": "Categories: Courses, Specialized Programs, Diplom, Bachelor, Technologist, Technical",
+
+  "education": [
+    {
+      "id": 1,
+      "title": "Desarrollo con PHP",
+      "desc": "Development web with PHP",
+      "month": "September",
+      "year": 2024,
+      "aptness": [
+        "PHP"
+      ],
+      "pdf": "./pdf/DesarrolloConPHP.pdf",
+      "category": "Courses"
+    },
+    {
+      "id": 2,
+      "title": "Developing Interpersonal Skills",
+      "desc": "About identify and analyze different communication styles, conflict response styles, build and maintain trust and increase self-confidence.",
+      "month": "August",
+      "year": 2024,
+      "aptness": [
+        "Empathy", "Active Listening", "Relationship Building", "Communication Strategies", "Constructive Feedback",
+        "Emotional Intelligence"
+      ],
+      "pdf": "./pdf/DevelopingInterpersonalSkills.pdf",
+      "category": "Courses"
+    },
+    {
+      "id": 3,
+      "title": "Foundations of Project Management",
+      "desc": "About project management skills, roles and responsibilities. Learned how to explain life cycle of a project, define organizational structure and organizational culture.",
+      "month": "June",
+      "year": 2025,
+      "aptness": [
+        "Organizational Change",
+        "Project Management Life Cycle",
+        "Project Management",
+        "Strategic Thinking",
+        "Project Closure",
+        "Program Management",
+        "Waterfall Methodology",
+        "Organizational Structure",
+        "Project Planning"
+      ],
+      "pdf": "./pdf/FoundationsOfPM.pdf",
+      "category": "Courses"
+    },
+    {
+      "id": 4,
+      "title": "GitHub Actions",
+      "desc": "About workflow automation, CI/CD, and GitHub Actions. Learned how to use GitHub Actions to automate tasks and workflows like building, testing, and deploying applications.",
+      "month": "September",
+      "year": 2024,
+      "aptness": [
+        "GitHub Actions",
+        "Workflow Automation",
+        "CI/CD",
+        "Automation"
+      ],
+      "pdf": "./pdf/GitHubActions.pdf",
+      "category": "Courses"
+    },
+    {
+      "id": 5,
+      "title": "Introduction to HTML5",
+      "desc": "About semantic HTML, HTML5 tags, and HTML5 attributes. Learned how to use HTML5 tags and attributes to create semantically correct and accessible web pages.",
+      "month": "October",
+      "year": 2023,
+      "aptness": [
+        "Semantic HTML",
+        "HTML5 Tags",
+        "HTML5 Attributes",
+        "Accessibility"
+      ],
+      "pdf": "./pdf/IntroductionToHTML5.pdf",
+      "category": "Courses"
+    },
+    {
+      "id": 6,
+      "title": "Introduction to CSS3",
+      "desc": "About CSS3 properties, selectors, and values. Learned how to use CSS3 properties and selectors to style web pages and create responsive designs.",
+      "month": "December",
+      "year": 2023,
+      "aptness": [
+        "CSS3 Properties",
+        "CSS3 Selectors",
+        "CSS3 Values",
+        "Responsive Design"
+      ],
+      "pdf": "./pdf/IntroductionToCSS3.pdf",
+      "category": "Courses"
+    },
+    {
+      "id": 7,
+      "title": "Programming with JavaScript",
+      "desc": "About JavaScript syntax, data types, and control structures. Learned how to use JavaScript to manipulate HTML elements, handle events, and create interactive web pages.",
+      "month": "January",
+      "year": 2024,
+      "aptness": [
+        "JavaScript Syntax",
+        "Data Types",
+        "Control Structures",
+        "DOM Manipulation",
+        "Event Handling",
+        "Interactive Web Pages",
+        "Jest"
+      ],
+      "pdf": "./pdf/ProgrammingWithJavaScript.pdf",
+      "category": "Courses"
+    },
+    {
+      "id": 8,
+      "title": "Introduction to Front-End Development",
+      "desc": "About HTML, CSS, and JavaScript. Learned how to use HTML, CSS, and JavaScript to create web pages and web applications.",
+      "month": "May",
+      "year": 2025,
+      "aptness": [
+        "React.js",
+        "User Interface (UI)",
+        "Bootstrap (Front-End Framework)",
+        "Front-End Web Development",
+        "Web Applications",
+        "JavaScript Frameworks",
+        "Responsive Web Design",
+        "HTML and CSS",
+        "Web Design and Development"
+      ],
+      "pdf": "./pdf/IntroductionToFront-EndDevelopment.pdf",
+      "category": "Courses"
+    },
+    {
+      "id": 9,
+      "title":"Specialization in Design UX/UI",
+      "desc": "About user interface design, user experience design, and wireframing. Learned how to create user interfaces for web applications and mobile applications.",
+      "month": "December",
+      "year": 2024,
+      "aptness": [
+        "User Interface (UI)",
+        "UX Design",
+        "Wireframing",
+        "Prototyping"
+      ],
+      "pdf": "./pdf/Specialization - DesignUXUI.pdf",
+      "category": "Specialized Programs"
+    }
+  ]
+}
