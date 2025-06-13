@@ -1,37 +1,49 @@
 ---
-import { education } from "../../public/education.json";
+  import { education } from "../../public/education.json"
 ---
+<section class="max-w-2xl mx-auto p-6 relative">
+  <div class="absolute top-0 left-1/2 w-1 bg-accentdark h-full transform -translate-x-1/2"></div>
+  <div class="relative pl-4">
+    {education
+      .sort((a, b) => {
+        const dateA = new Date(`${a.year} ${a.month}`);
+        const dateB = new Date(`${b.year} ${b.month}`);
+        return dateB - dateA;
+      })
+      .map((e, index) => (
+        <div class={`relative flex items-center ${index % 2 === 0 ? "justify-start" : "justify-end"} pb-6`}>
+          {/* Card */}
+          <div class="w-3/4 p-4 bg-white shadow-md rounded-md">
+            <h3 class="text-lg font-semibold">
+              {e.title}{" "}
+              <span class="text-xs text-zinc-900 border border-zinc-900 rounded-md px-1">
+                {e.category}
+              </span>
+            </h3>
+            <p class="text-sm text-gray-500">{e.month} - {e.year}</p>
+            <div class="mt-2">
+              <h4 class="text-md font-medium">Description</h4>
+              <ul class="list-disc pl-4 text-sm text-gray-700">{e.desc}</ul>
+            </div>
 
-<section class="max-w-2xl mx-auto p-6">
-  <h2 class="text-xl font-bold mb-4">Education</h2>
-  <div class="relative pl-4 border-l-2 border-accentdark">
-    {education.map((e) => (
-      <div class="relative pl-4 pb-6">
-        <div class="absolute -left-2 w-2 h-2 bg-red-500 rounded-full"></div>
-        <h3 class="text-lg font-semibold">{e.title} <span class="text-xs text-zinc-900 border border-zinc-900 rounded-md px-1">{e.category}</span></h3>
-        <p class="text-sm text-gray-500">{e.year}</p>
-        <div class="mt-2">
-          <h4 class="text-md font-medium">Description</h4>
-          <ul class="list-disc pl-4 text-sm text-gray-700">
-            {e.desc}
-          </ul>
-        </div>
+            <div class="mt-2">
+              <h4 class="text-md font-medium">Aptness</h4>
+              <ul class="list-disc pl-4 text-sm text-gray-700 grid grid-cols-3 gap-2">
+                {e.aptness.map((item) => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+            </div>
 
-        <div class="mt-2">
-          <h4 class="text-md font-medium">Aptness</h4>
-          <ul class="list-disc pl-4 text-sm text-gray-700 grid grid-cols-3 gap-2">
-            {e.aptness.map((item) => <li>{item}</li>)}
-          </ul>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <button class="px-4 py-2 bg-accentdark transition-all duration-100 hover:bg-accent text-white rounded-md">
+                <a href={e.pdf} target="_blank" class="text-sm">
+                  Download PDF
+                </a>
+              </button>
+            </div>
+          </div>
         </div>
-
-        <div class="mt-2 flex flex-wrap gap-2">
-          <button class="px-4 py-2 bg-accentdark transition-all duration-100 hover:bg-accent text-white rounded-md">
-            <a href={e.pdf} target="_blank" class="text-sm">
-              Download PDF
-            </a>
-          </button>
-        </div>
-      </div>
-    ))}
+      ))}
   </div>
 </section>

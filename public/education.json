@@ -5,13 +5,13 @@
     {
       "id": 1,
       "title": "Desarrollo con PHP",
-      "desc": "Development web with PHP",
+      "desc": "About PHP syntax, data types, and control structures. Learned how to use PHP to manipulate data, handle events, and create interactive web pages.",
       "month": "September",
       "year": 2024,
       "aptness": [
         "PHP"
       ],
-      "pdf": "./pdf/DesarrolloConPHP.pdf",
+      "pdf": "/PDF/DesarrolloConPHP.pdf",
       "category": "Courses"
     },
     {
@@ -24,7 +24,7 @@
         "Empathy", "Active Listening", "Relationship Building", "Communication Strategies", "Constructive Feedback",
         "Emotional Intelligence"
       ],
-      "pdf": "./pdf/DevelopingInterpersonalSkills.pdf",
+      "pdf": "/PDF/DevelopingInterpersonalSkills.pdf",
       "category": "Courses"
     },
     {
@@ -44,7 +44,7 @@
         "Organizational Structure",
         "Project Planning"
       ],
-      "pdf": "./pdf/FoundationsOfPM.pdf",
+      "pdf": "/PDF/FoundationsOfPM.pdf",
       "category": "Courses"
     },
     {
@@ -59,7 +59,7 @@
         "CI/CD",
         "Automation"
       ],
-      "pdf": "./pdf/GitHubActions.pdf",
+      "pdf": "/PDF/GitHubActions.pdf",
       "category": "Courses"
     },
     {
@@ -74,7 +74,7 @@
         "HTML5 Attributes",
         "Accessibility"
       ],
-      "pdf": "./pdf/IntroductionToHTML5.pdf",
+      "pdf": "/PDF/IntroductionToHTML5.pdf",
       "category": "Courses"
     },
     {
@@ -89,7 +89,7 @@
         "CSS3 Values",
         "Responsive Design"
       ],
-      "pdf": "./pdf/IntroductionToCSS3.pdf",
+      "pdf": "/PDF/IntroductionToCSS3.pdf",
       "category": "Courses"
     },
     {
@@ -107,7 +107,7 @@
         "Interactive Web Pages",
         "Jest"
       ],
-      "pdf": "./pdf/ProgrammingWithJavaScript.pdf",
+      "pdf": "/PDF/ProgrammingWithJavaScript.pdf",
       "category": "Courses"
     },
     {
@@ -127,7 +127,7 @@
         "HTML and CSS",
         "Web Design and Development"
       ],
-      "pdf": "./pdf/IntroductionToFront-EndDevelopment.pdf",
+      "pdf": "/PDF/IntroductionToFront-EndDevelopment.pdf",
       "category": "Courses"
     },
     {
@@ -142,7 +142,7 @@
         "Wireframing",
         "Prototyping"
       ],
-      "pdf": "./pdf/Specialization - DesignUXUI.pdf",
+      "pdf": "/PDF/Specialization - DesignUXUI.pdf",
       "category": "Specialized Programs"
     }
   ]
