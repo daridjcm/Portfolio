@@ -1,7 +1,12 @@
-<img
-class="rounded-full w-24 mb-2"
-src="./iconCodeSlash.svg"
-alt="Icon Code Slash"
+---
+import { Image } from "astro:assets";
+import myAvatar from "../../public/avatar-dariana.png";
+---
+
+<Image
+  src={myAvatar}
+  alt="Recreated from the original by Dariana Medina for AI Art Generator style cyberpunk."
+  class="rounded-full w-36 mb-2"
 />
 <h1 class="text-4xl font-bold mb-4 opacity-90">Hello, Client-side. <span class="text-zinc-800 text-4xl font-semibold">I'm Dariana</span></h1>
 <hr class="mt-6 mb-2">
@@ -16,18 +21,15 @@ For contact me, touch here.
       <span class="icon-[ic--round-contact-phone] text-xl ml-2"></span>
     </button>
   </a>
-  <div class="bg-zinc-100 text-2xl gap-2 p-2 h-10 rounded-md shadow-md">
-    <a href="https://www.github.com/daridjcm" target="_blank">
-      <span class="cursor-pointer icon-[line-md--github]"></span>
+  <div class="text-4xl gap-2">
+    <a href="https://www.github.com/daridjcm" target="_blank" aria-label="GitHub">
+      <span class="cursor-pointer icon-[line-md--github-loop] text-black"></span>
     </a>
-    <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=darianadejesusmedina@gmail.com" target="_blank">
-      <span class="cursor-pointer icon-[skill-icons--gmail-light]"></span>
+    <a href=`https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${import.meta.env.EMAIL}` target="_blank" aria-label="gmail">
+      <span class="cursor-pointer icon-[skill-icons--gmail-dark]"></span>
     </a>
-    <a href="https://www.linkedin.com/in/daridjcm" target="_blank">
+    <a href="https://www.linkedin.com/in/daridjcm" target="_blank" aria-label="LinkedIn">
       <span class="cursor-pointer icon-[devicon--linkedin]"></span>
-    </a>
-    <a href="https://discord.gg/XZSuGbVyp7" target="_blank">
-      <span class="cursor-pointer icon-[skill-icons--discord]"></span>
     </a>
   </div>
 </div>
