@@ -1,42 +1,42 @@
+---
+import { Image } from "astro:assets";
+import {projects} from "../../public/projects.json";
+
+// Import images to be used in the project list
+import project1Img from "../../public/images/id1.png";
+import project2Img from "../../public/images/id2.png";
+import project3Img from "../../public/images/id3.png";
+import project4Img from "../../public/images/id4.png";
+import project5Img from "../../public/images/id5.png";                    
+import project6Img from "../../public/images/id6.png";
+import project7Img from "../../public/images/id7.png";
+import project8Img from "../../public/images/id8.png";
+import project9Img from "../../public/images/id9.png";
+---
+
 <div class="p-10 grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-4 w-full" id="project-list">
+    {projects.map((project) => {
+        let imgSrc;
 
+        imgSrc = project.id === 1 ? project1Img
+            : project.id === 2 ? project2Img
+            : project.id === 3 ? project3Img
+            : project.id === 4 ? project4Img
+            : project.id === 5 ? project5Img
+            : project.id === 6 ? project6Img
+            : project.id === 7 ? project7Img
+            : project.id === 8 ? project8Img
+            : project.id === 9 ? project9Img
+            : null;
+
+        return (
+            <a href={project.link} target="_blank">
+                <div class="bg-white h-[100%] p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all transform hover:scale-105 duration-200 hover:opacity-70">
+                    <Image src={imgSrc} alt={`project-${project.id}`} class="rounded" loading={"eager"} />
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">{project.title}</h3>
+                    <p class="text-gray-600 mb-4">{project.desc}</p>
+                </div>
+            </a>
+        );
+    })}
 </div>
-
-<script>
-    function getAPI() {
-        fetch("/projects.json")
-            .then((response) => response.json())
-            .then((data) => displayData(data))
-            .catch((error) => {
-                console.error("Error fetching the data:", error);
-            });
-    }
-
-    function displayData(data) {
-        console.log(data);
-        if (Array.isArray(data.products)) {
-            const projectListContainer = document.getElementById('project-list');
-            projectListContainer.innerHTML = ''; 
-
-            data.products.forEach((project) => {
-                const card = createProjectCard(project);
-                projectListContainer.innerHTML += card;
-            });
-        } else {
-            console.error("The property projects it not array", data);
-        }
-    }
-
-    function createProjectCard(project) {
-    return `
-    <a href="${project.link}" target="_blank">
-        <div class="bg-white h-[100%] p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all transform hover:scale-105 duration-200 hover:opacity-70">
-            <img class="rounded" src=${project.img} />
-            <h3 class="text-2xl font-semibold text-gray-800 mb-4">${project.title}</h3>
-            <p class="text-gray-600 mb-4">${project.desc}</p>
-        </div>
-    </a>
-    `;
-    }
-    window.addEventListener("DOMContentLoaded", getAPI);
-</script>
