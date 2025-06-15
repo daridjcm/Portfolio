@@ -9,4 +9,11 @@ export default defineConfig({
     integrations: [tailwind()],
     base: '/',
     server: ({ command }) => ({ port: command === 'dev' ? 4321 : 4000 }),
+    vite: {
+        build: {
+            terserOptions: {
+                compress: true
+            }
+        }
+    }
 });

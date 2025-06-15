@@ -1,4 +1,5 @@
 ---
+  import { Image } from "astro:assets";
   interface Skills {
     primary: string;
     secondary: string;
@@ -16,14 +17,35 @@
 <div class="flex flex-row flex-wrap gap-x-12 gap-y-4 items-center justify-center text-center">
   <div class="mb-10">
     <p>Principal</p>
-    <img src={skills.primary} alt="Icons representing essential development skills like languages." class="m-auto" />
+    <Image 
+      src={skills.primary} 
+      alt="Icons representing essential development skills like languages" 
+      width={300}
+      height={98}
+      loading={"eager"}
+      class:list="m-auto"
+    />
   </div>
   <div class="mb-10">
     <p>Secondary</p>
-    <img class="m-auto" src={skills.secondary} alt="Icons representing secondary development skills like tools and frameworks." />
+    <Image 
+      src={skills.secondary} 
+      alt="Icons representing secondary development skills like frameworks" 
+      width={300}
+      height={98}
+      loading={"eager"}
+      class:list="m-auto"
+    />
   </div>
   <div class="mb-10">
     <p>Edition</p>
-    <img class="m-auto" src={skills.edition} alt="Icons representing skills in the edition." />
+    <Image 
+      src={skills.edition} 
+      alt="Icons representing editions of development" 
+      width={300}
+      height={98}
+      loading={"eager"}
+      class:list="m-auto"
+    />
   </div>
 </div>
