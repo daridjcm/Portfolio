@@ -2,66 +2,66 @@
   "projects": [
     {
       "id": 1,
-      "title": "Stone, Paper or Scissors",
-      "desc": "Website Game Stone, Paper or Scissors made with HTML, CSS and JS Pure.",
-      "link": "https://github.com/Daridjcm/Portfolio/tree/main/projectsPortfolio/StonePaperScissors",
-      "img": "/images/id1.png"
+      "status": "completed",
+      "title": "todo-list-app",
+      "desc": "Web-App notes list, I used Swiper for te animation to slides.",
+      "link": "https://notes-list-app.vercel.app/index.html",
+      "img": "/images/id1.png",
+      "tools": ["HTML", "TailwindCSS", "JS", "Swiper"]
     },
     {
       "id": 2,
-      "title": "Pokédex",
-      "desc": "Website Pokédex API made with HTML, CSS and JS Pure.",
-      "link": "https://github.com/Daridjcm/Portfolio/tree/main/projectsPortfolio/Pokédex",
-      "img": "/images/id2.png"
+      "status": "completed",
+      "title": "E-commerce StyliShoes",
+      "desc": "Web-App Ecommerce about Shoes, it have a section of the products, shopping cart and about us.",
+      "link": "https://ecommerce-one-rust.vercel.app/index.html",
+      "img": "/images/id2.png",
+      "tools": ["Bootstrap5"]
     },
     {
       "id": 3,
-      "title": "Calculator",
-      "desc": "Website Calculator made with HTML, CSS and JS Pure.",
-      "link": "https://github.com/Daridjcm/Portfolio/tree/main/projectsPortfolio/Calculator",
-      "img": "/images/id3.png"
+      "status": "in progress",
+      "title": "E-commerce DeylaShop",
+      "desc": "Web-App Ecommerce about grocery, beauty, furnitures. It have a shopping cart. The logo is made by me.",
+      "link": "https://deyla-shop.vercel.app/index.html",
+      "img": "/images/id3.png",
+      "tools": ["Astro", "TailwindCSS", "API"]
     },
     {
       "id": 4,
-      "title": "The Button Blue",
-      "desc": "Website Game of clicks made with HTML, CSS and JS Pure.",
-      "link": "https://github.com/Daridjcm/Portfolio/tree/main/projectsPortfolio/ButtonBlue",
-      "img": "/images/id4.png"
+      "status": "completed",
+      "title": "Weather",
+      "desc": "Web-App about the weather of the world, you can see the weather of your city or country.",
+      "link": "https://daridjcm.github.io/Weather/",
+      "img": "/images/id4.png",
+      "tools": ["HTML", "CSS", "JS", "API"]
     },
     {
       "id": 5,
-      "title": "Menu Dishes",
-      "desc": "Menú with or whithout taxes, made with HTML, CSS and JS Pure.",
-      "link": "https://github.com/Daridjcm/Portfolio/tree/main/projectsPortfolio/Menu",
-      "img": "/images/id5.png"
+      "status": "completed",
+      "title":"Weather 2",
+      "desc": "Web-App about the weather of Europe, this project is a idea of Coursera. But the design UX/UI and the code is my own.",
+      "link": "https://daridjcm.github.io/Weather2/",
+      "img": "/images/id5.png",
+      "tools": ["HTML", "CSS", "JS", "API"]
     },
     {
       "id": 6,
-      "title": "todo-list-app",
-      "desc": "Web-App notes list, made with HTML, TailwindCSS and JS Pure.",
-      "link": "https://notes-list-app.vercel.app/index.html",
-      "img": "/images/id6.png"
-    },
+      "status": "completed",
+      "title": "Seat Selector",
+      "desc": "Web-App created a responsive seat selector with tematic Movies with interactive selection and real-time updates.",
+      "link": "https://daridjcm.github.io/Seat-Selector/",
+      "img": "/images/id6.png",
+      "tools": ["HTML", "CSS", "JS"]
+    }, 
     {
       "id": 7,
-      "title": "E-commerce StyliShoes",
-      "desc": "Web-App Ecommerce about Shoes, made with Bootstrap5.",
-      "link": "https://ecommerce-one-rust.vercel.app/index.html",
-      "img": "/images/id7.png"
-    },
-    {
-      "id": 8,
-      "title": "E-commerce DeylaShop",
-      "desc": "Web-App Ecommerce about grocery, beauty, furnitures. Made with Astro, TailwindCSS.",
-      "link": "https://deyla-shop.vercel.app/index.html",
-      "img": "/images/id8.png"
-    },
-    {
-      "id": 9,
-      "title": "Weather",
-      "desc": "Web-App about the weather, made with HTML, CSS and JS Pure.",
-      "link": "https://daridjcm.github.io/Weather/",
-      "img": "/images/id9.png"
+      "status": "in progress",
+      "title": "LifeSIM",
+      "desc": "An interactive life simulation web game where users manage their daily routine and key decisions through an intuitive system.",
+      "link": "https://github.com/Daridjcm/LifeSIM",
+      "img": "/images/id7.png",
+      "tools": ["React", "TailwindCSS", "Express"]
     }
   ]
 }
