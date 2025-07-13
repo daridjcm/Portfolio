@@ -26,15 +26,13 @@ import project7Img from "../../public/images/id7.png";
             : null;
 
         return (
+            <a href={project.link} target="_blank" class="no-underline text-black">
                 <div class="bg-white h-[100%] p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all transform hover:scale-105 duration-200 hover:opacity-70">
                     <Image src={imgSrc} alt={`project-${project.id}`} class="rounded" loading={"eager"} />
                     <h3 class="text-2xl font-semibold text-gray-800 mb-4">{project.title}</h3>
-                    <p class={`${project.status == "completed" ? "bg-green-300 text-green-600" : "bg-yellow-300 text-yellow-600"} w-fit px-1 py-1 rounded-full mb-4 text-xs`}>{project.status}</p>
+                    <p class={`${project.status == "completed" ? "bg-green-300 text-green-600" : "bg-yellow-300 text-yellow-600"} w-fit px-2 py-1 rounded-full mb-4 text-xs`}>{project.status}</p>
                     <p class="text-gray-600 mb-4">{project.desc}</p>
-                        <ul class="flex flex-row justify-end gap-1 text-sm text-black list-none">
-                            <a href={project.link} target="_blank" class="text-accentdark hover:text-accentdark-dark transition-colors">
-                                <span class="icon-[line-md--github-loop] text-black text-3xl"></span>
-                            </a>
+                        <ul class="flex flex-row justify-start gap-1 text-sm text-black list-none">
                         {project.tools.map((tool) => {
                             return (
                                     <li class="bg-accentdark rounded-md px-2 py-1 text-white">
@@ -44,6 +42,7 @@ import project7Img from "../../public/images/id7.png";
                             })}
                         </ul>
                 </div>
+            </a>    
         );
     })}
 </div>
