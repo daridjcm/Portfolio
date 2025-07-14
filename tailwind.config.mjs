@@ -10,9 +10,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        accent: "#cca8e9",
-        accentdark: "#4f3b78",
+        pink: "#cca8e9",
+        purple: "#4f3b78",
+        white: "#f4f4f5",
         black: "rgb(15, 18, 25)",
+        cardlight: "#ffffff",
+        carddark: "#27272a",
       },
       boxShadow: {
         custom:
