@@ -1,0 +1,109 @@
+:root {
+  /* Paleta base */
+  --color-bg-light: #f2f2f2;
+  --color-text-light: rgb(15, 18, 25);
+  --color-card-light: #ffffff;
+
+  --color-bg-dark: rgb(15, 18, 25);
+  --color-text-dark: #f4f4f5;
+  --color-card-dark: #27272a;
+
+  /* Colores compartidos */
+  --color-accent: #cca8e9;
+  --color-accent-dark: #4f3b78;
+  --color-white: #f4f4f5;
+}
+
+/* Modo Claro */
+.light {
+  --bg: var(--color-bg-light);
+  --text: var(--color-text-light);
+  --card: var(--color-card-light);
+}
+
+/* Modo Oscuro */
+.dark {
+  --bg: var(--color-bg-dark);
+  --text: var(--color-text-dark);
+  --card: var(--color-card-dark);
+}
+
+/* Aplicación Global */
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Tarjetas */
+.card {
+  background-color: var(--card);
+  color: var(--text);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  color: var(--color-accent);
+}
+
+/* Botón de acento */
+.button {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--color-accent-dark);
+}
+
+/* Enlaces */
+a {
+  color: var(--color-accent-dark);
+  text-decoration: none;
+}
+
+a[href="https://www.linkedin.com/in/daridjcm/"]:hover {
+  color: var(--color-accent);
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea, textarea:focus {
+  background-color: var(--color-accent-dark);
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+nav a.nav-active,
+nav a[aria-current="page"] {
+  color: var(--color-accent);
+  border-bottom: 4px solid var(--color-accent);
+  font-weight: 600;
+}
+
+.chip {
+  background-color: var(--color-accent-dark);
+  color: var(--color-white);
+}
+
+
+header, footer {
+  background-color: var(--color-accent-dark);
+  color: var(--color-white);
+}

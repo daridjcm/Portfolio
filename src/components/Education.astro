@@ -2,7 +2,7 @@
   import { education } from "../../public/education.json"
 ---
 <section class="max-w-2xl mx-auto p-6 relative">
-  <div class="absolute top-0 left-1/2 w-1 bg-accentdark h-full transform -translate-x-1/2"></div>
+  <div class="absolute top-0 left-1/2 w-1 h-full transform -translate-x-1/2"></div>
   <div class="relative pl-4">
     {education
       .sort((a, b) => {
@@ -11,24 +11,24 @@
         return dateB.getTime() - dateA.getTime();
       })
       .map((e, index) => (
-        <div class={`relative flex items-center ${index % 2 === 0 ? "justify-start" : "justify-end"} pb-6`}>
+        <div class={`relative flex items-center ${index % 2 === 0 ? "justify-start" : "justify-end"} pb-6 transition-all duration-200 hover:scale-105`}>
           {/* Card */}
-          <div class="w-3/4 p-4 bg-white shadow-md rounded-md">
+          <div class="w-3/4 p-4 card shadow-md rounded-md">
             <h3 class="text-lg font-semibold">
               {e.title}{" "}
-              <span class="text-xs text-zinc-900 border border-zinc-900 rounded-md px-1">
+              <p class="text-xs w-fit border rounded-md px-1">
                 {e.category}
-              </span>
+              </p>
             </h3>
-            <p class="text-sm text-gray-500">{e.month} - {e.year}</p>
+            <p class="text-sm">{e.month} - {e.year}</p>
             <div class="mt-2">
               <h4 class="text-md font-medium">Description</h4>
-              <ul class="list-disc pl-4 text-sm text-gray-700">{e.desc}</ul>
+              <ul class="list-disc pl-4 text-sm">{e.desc}</ul>
             </div>
 
             <div class="mt-2">
               <h4 class="text-md font-medium">Aptness</h4>
-              <ul class="list-disc pl-4 text-sm text-gray-700 grid sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3 gap-2">
+              <ul class="list-disc pl-4 text-sm grid sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3 gap-2">
                 {e.aptness.map((item) => (
                   <li>{item}</li>
                 ))}
@@ -36,9 +36,10 @@
             </div>
 
             <div class="mt-4 flex flex-wrap gap-2">
-              <button class="px-4 py-2 bg-accentdark transition-all duration-100 hover:bg-accent text-white rounded-md">
-                <a href={`${import.meta.env.BASE_URL}${e.pdf}`} target="_blank" class="text-sm">
-                  Download PDF
+              <button class="button px-9 py-2 transition-all duration-100 rounded-md">
+                <a href={`${import.meta.env.BASE_URL}${e.pdf}`} target="_blank" class="text-sm mx-auto flex items-center gap-2">
+                  Open PDF
+                  <span class="icon-[prime--file-pdf] text-3xl"></span>
                 </a>
               </button>
             </div>
