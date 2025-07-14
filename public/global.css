@@ -1,6 +1,6 @@
 :root {
   /* Paleta base */
-  --color-bg-light: #ffffff;
+  --color-bg-light: #f2f2f2;
   --color-text-light: rgb(15, 18, 25);
   --color-card-light: #ffffff;
 
@@ -51,10 +51,6 @@ body {
   color: var(--color-accent);
 }
 
-.card p {
-  color: var(--text);
-}
-
 /* Botón de acento */
 .button {
   background-color: var(--color-accent);
@@ -101,7 +97,8 @@ nav a[aria-current="page"] {
   font-weight: 600;
 }
 
-span {
+.chip {
+  background-color: var(--color-accent-dark);
   color: var(--color-white);
 }
 
