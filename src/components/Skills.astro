@@ -1,51 +1,36 @@
----
-  import { Image } from "astro:assets";
-  interface Skills {
-    primary: string;
-    secondary: string;
-    edition: string;
-  }
-
-  const skills: Skills = {
-    primary: "https://skillicons.dev/icons?i=html,css,js,ts,php,git,nodejs,mysql,regex,bash&perline=6",
-    secondary: "https://skillicons.dev/icons?i=react,htmx,astro,bootstrap,tailwind,sass,vite,express,sequelize,npm,bun,githubactions&perline=6",
-    edition: "https://skillicons.dev/icons?i=ae,ps,pr,au,ai,xd,figma,wordpress,notion&perline=6"
-  }
----
-
 <p class="text-4xl text-center mt-16 mb-8">Skills</p>
-<div class="flex flex-row flex-wrap gap-x-12 gap-y-4 items-center justify-center text-center">
-  <div class="mb-10">
-    <p class="px-5 py-1 rounded-md">Principal</p>
-    <Image 
-      src={skills.primary} 
-      alt="Icons representing essential development skills like languages" 
-      width={300}
-      height={98}
-      loading={"eager"}
-      class:list="mt-3"
-    />
+<div class="flex flex-row flex-wrap gap-x-12 gap-y-4 items-start justify-center text-center">
+  <div class="flex-1 max-w-md mb-10">
+    <p class="px-5 py-1 rounded-md text-2xl">Principal</p>
+    <div class="flex flex-wrap justify-center gap-3 mt-3 text-pink text-5xl">
+      <span class="icon-[simple-icons--html]" title="html"></span>
+      <span class="icon-[simple-icons--css]" title="css"></span>
+      <span class="icon-[simple-icons--javascript]" title="javascript"></span>
+      <span class="icon-[simple-icons--typescript]" title="typescript"></span>
+      <span class="icon-[simple-icons--php]" title="php"></span>
+      <span class="icon-[simple-icons--git]" title="git"></span>
+      <span class="icon-[simple-icons--nodedotjs]" title="nodedotjs"></span>
+      <span class="icon-[simple-icons--mysql]" title="mysql"></span>
+      <span class="icon-[simple-icons--gnubash]" title="gnubash"></span>
+    </div>
   </div>
-  <div class="mb-10">
-    <p class="px-5 py-1 rounded-md">Secondary</p>
-    <Image 
-      src={skills.secondary} 
-      alt="Icons representing secondary development skills like frameworks" 
-      width={300}
-      height={98}
-      loading={"eager"}
-      class:list="mt-3"
-    />
-  </div>
-  <div class="mb-10">
-    <p class="px-5 py-1 rounded-md">Edition</p>
-    <Image 
-      src={skills.edition} 
-      alt="Icons representing editions of development" 
-      width={300}
-      height={98}
-      loading={"eager"}
-      class:list="mt-3"
-    />
+  <div class="flex-1 max-w-md mb-10">
+    <p class="px-5 py-1 rounded-md text-2xl">Secondary</p>
+    <div class="flex flex-wrap justify-center gap-3 mt-3 text-pink text-5xl">
+      <span class="icon-[simple-icons--react]" title="react"></span>
+      <span class="icon-[simple-icons--htmx]" title="htmx"></span>
+      <span class="icon-[simple-icons--astro]" title="astro"></span>
+      <span class="icon-[simple-icons--bootstrap]" title="bootstrap"></span>
+      <span class="icon-[simple-icons--tailwindcss]" title="tailwindcss"></span>
+      <span class="icon-[simple-icons--sass]" title="sass"></span>
+      <span class="icon-[simple-icons--vite]" title="vite"></span>
+      <span class="icon-[simple-icons--express]" title="express"></span>
+      <span class="icon-[simple-icons--sequelize]" title="sequelize"></span>
+      <span class="icon-[simple-icons--npm]" title="npm"></span>
+      <span class="icon-[simple-icons--bun]" title="bun"></span>
+      <span class="icon-[simple-icons--githubactions]" title="githubactions"></span>
+      <span class="icon-[simple-icons--figma]" title="figma"></span>
+      <span class="icon-[simple-icons--wordpress]" title="wordpress"></span>
+    </div>
   </div>
 </div>
