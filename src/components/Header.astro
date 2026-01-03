@@ -1,30 +1,52 @@
-<header class="m-0 p-0 px-4 shadow-xl">
-  <div class="flex items-center justify-between p-5">
+<header class="w-full m-0 p-0 shadow-xl bg-purple-600">
+  <div
+    class="max-w-7xl mx-auto flex items-center justify-between px-4 py-5 text-xl"
+  >
     <nav class="flex-1 flex justify-center gap-3">
-      <a class="px-2 py-2 border-b-4 border-transparent transition-colors transition-border duration-300 ease-in-out" href="/">Home</a>
-      <a class="px-2 py-2 border-b-4 border-transparent transition-colors transition-border duration-300 ease-in-out" href="/projects">Projects</a>
-      <a class="px-2 py-2 border-b-4 border-transparent transition-colors transition-border duration-300 ease-in-out" href="/education">Education</a>
-      <a class="px-2 py-2 border-b-4 border-transparent transition-colors transition-border duration-300 ease-in-out" href="/contact">Contact</a>
+      <a
+        class="px-2 py-2 border-b-4 border-transparent transition-colors duration-300 ease-in-out"
+        href="/">Home</a
+      >
+      <a
+        class="px-2 py-2 border-b-4 border-transparent transition-colors duration-300 ease-in-out"
+        href="/projects">Projects</a
+      >
+      <a
+        class="px-2 py-2 border-b-4 border-transparent transition-colors duration-300 ease-in-out"
+        href="/education">Education</a
+      >
+      <a
+        class="px-2 py-2 border-b-4 border-transparent transition-colors duration-300 ease-in-out"
+        href="/contact">Contact</a
+      >
     </nav>
-
-    <div>
-      <button class="button rounded-md" id="theme-toggle">
-        <span class="icon-[line-md--light-dark-loop] text-4xl"></span>
-      </button>
-    </div>
   </div>
 </header>
 
-<script> 
- document.addEventListener("DOMContentLoaded", () => {
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
     const html = document.documentElement;
-    const savedTheme = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-      html.classList.add('dark');
-    }
+    // Detectar preferencia del sistema
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
+    const applyTheme = (isDark) => {
+      if (isDark) {
+        html.classList.add("dark");
+      } else {
+        html.classList.remove("dark");
+      }
+    };
+
+    // Aplicar al cargar
+    applyTheme(mediaQuery.matches);
+
+    // Escuchar cambios del sistema en tiempo real
+    mediaQuery.addEventListener("change", (e) => {
+      applyTheme(e.matches);
+    });
+
+    // Marcar link activo
     const links = document.querySelectorAll("nav a");
     const currentPath = window.location.pathname;
 
@@ -38,18 +60,5 @@
         link.removeAttribute("aria-current");
       }
     });
-
-    const toggleBtn = document.getElementById('theme-toggle');
-    if (toggleBtn) {
-      toggleBtn.addEventListener('click', () => {
-        if (html.classList.contains('dark')) {
-          html.classList.remove('dark');
-          localStorage.setItem('theme', 'light');
-        } else {
-          html.classList.add('dark');
-          localStorage.setItem('theme', 'dark');
-        }
-      });
-    }
   });
 </script>

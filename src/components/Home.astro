@@ -6,36 +6,57 @@ import myAvatar from "../../public/avatar-dariana.png";
 <Image
   src={myAvatar}
   alt="Recreated from the original by Dariana Medina for AI Art Generator style cyberpunk."
-  width={130}
-  height={130}
-  class="rounded-full"
+  class="rounded-full lg:w-96 lg:h-96 mx-auto"
   loading={"eager"}
 />
-<h1 class="text-4xl font-bold mt-4 opacity-90 text-transparent bg-clip-text bg-animated-gradient animate-gradient-text">
+<h1
+  class="text-4xl text-center font-bold mt-4 opacity-90 text-transparent bg-clip-text bg-animated-gradient animate-gradient-text"
+>
   Hello, Client-side. I'm Dariana
 </h1>
 
-<hr class="mt-6 mb-2">
-<p class="text-lg leading-relaxed opacity-80 mb-6">
-Welcome to my personal website. Explore my projects and learn more about me on different platforms. I'm a
-<a href="https://www.linkedin.com/in/daridjcm/" class="underline transition-colors">Developer Web</a> with a passion for building user-friendly and accessible websites. I'm excited to collaborate with you.
-
-For contact me, touch here.
-<div class="flex justify-start gap-5">
-  <a href="./contact">
-    <button class="button rounded px-7 py-1 shadow-md h-10 transition-all flex items-center justify-center space-x-2">Contact
-      <span class="icon-[ic--round-contact-phone] text-xl ml-2"></span>
-    </button>
-  </a>
-  <div class="text-4xl gap-2">
-    <a href="https://www.github.com/daridjcm" target="_blank" aria-label="GitHub">
-      <span class="cursor-pointer icon-[line-md--github-loop] text-pink"></span>
+<hr class="mt-6 mb-2" />
+<p class="text-lg text-center leading-relaxed opacity-80 mb-6">
+  Welcome to my personal website. Explore my projects and learn more about me on
+  different platforms. I'm a
+  <a
+    href="https://www.linkedin.com/in/daridjcm/"
+    class="underline transition-colors">Developer Web</a
+  > with a passion for building user-friendly and accessible websites. I'm excited
+  to collaborate with you. For contact me, touch here.
+  <div class="flex justify-center gap-5">
+    <a href="./contact">
+      <button
+        class="button rounded px-7 py-1 shadow-md h-10 transition-all flex items-center justify-center space-x-2"
+        >Contact
+        <span class="icon-[ic--round-contact-phone] text-xl ml-2"></span>
+      </button>
     </a>
-    <a href=`https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${import.meta.env.EMAIL}` target="_blank" aria-label="gmail">
-      <span class="cursor-pointer icon-[simple-icons--gmail] text-pink"></span>
-    </a>
-    <a href="https://www.linkedin.com/in/daridjcm" target="_blank" aria-label="LinkedIn">
-      <span class="cursor-pointer icon-[simple-icons--linkedin] text-pink"></span>
-    </a>
+    <div class="text-4xl gap-2">
+      <a
+        href="https://www.github.com/daridjcm"
+        target="_blank"
+        aria-label="GitHub"
+      >
+        <span class="cursor-pointer icon-[line-md--github-loop] text-pink"
+        ></span>
+      </a>
+      <a
+        href=`https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${import.meta.env.EMAIL}`
+        target="_blank"
+        aria-label="gmail"
+      >
+        <span class="cursor-pointer icon-[simple-icons--gmail] text-pink"
+        ></span>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/daridjcm"
+        target="_blank"
+        aria-label="LinkedIn"
+      >
+        <span class="cursor-pointer icon-[simple-icons--linkedin] text-pink"
+        ></span>
+      </a>
+    </div>
   </div>
-</div>
+</p>

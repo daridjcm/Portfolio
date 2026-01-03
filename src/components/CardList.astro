@@ -1,48 +1,66 @@
 ---
 import { Image } from "astro:assets";
-import {projects} from "../../public/projects.json";
+import { projects } from "../../public/projects.json";
 
 // Import images to be used in the project list
 import project1Img from "../../public/images/id1.png";
 import project2Img from "../../public/images/id2.png";
 import project3Img from "../../public/images/id3.png";
 import project4Img from "../../public/images/id4.png";
-import project5Img from "../../public/images/id5.png";                    
+import project5Img from "../../public/images/id5.png";
 import project6Img from "../../public/images/id6.png";
 import project7Img from "../../public/images/id7.png";
 ---
 
-<div class="lg:p-6 sm:p-0 m-0 grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-4 w-full" id="project-list">
-    {projects.map((project) => {
-        let imgSrc;
+<div
+  class="lg:p-6 sm:p-0 m-0 grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-4 w-full"
+  id="project-list"
+>
+  {
+    projects.map((project) => {
+      let imgSrc;
 
-        imgSrc = project.id === 1 ? project1Img
-            : project.id === 2 ? project2Img
-            : project.id === 3 ? project3Img
-            : project.id === 4 ? project4Img
-            : project.id === 5 ? project5Img
-            : project.id === 6 ? project6Img
-            : project.id === 7 ? project7Img
-            : null;
+      imgSrc =
+        project.id === 1
+          ? project1Img
+          : project.id === 2
+            ? project2Img
+            : project.id === 3
+              ? project3Img
+              : project.id === 4
+                ? project4Img
+                : project.id === 5
+                  ? project5Img
+                  : project.id === 6
+                    ? project6Img
+                    : project.id === 7
+                      ? project7Img
+                      : null;
 
-        return (
-            <a href={project.link} target="_blank" class="no-underline">
-                <div class="card h-[100%] p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all transform hover:scale-105 duration-200 hover:opacity-70">
-                    <Image src={imgSrc} alt={`project-${project.id}`} class="rounded" loading={"eager"} />
-                    <h3 class="text-2xl font-semibold mb-4">{project.title}</h3>
-                    <p class={`${project.status == "completed" ? "bg-green-300 text-green-600" : "bg-yellow-300 text-yellow-600"} w-fit px-2 py-1 rounded-full mb-4 text-xs`}>{project.status}</p>
-                    <p class="mb-4">{project.desc}</p>
-                        <ul class="flex flex-row justify-start gap-1 text-sm list-none">
-                        {project.tools.map((tool) => {
-                            return (
-                                    <li class="chip button rounded-md px-2 py-1">
-                                        {tool}
-                                    </li>
-                                );
-                            })}
-                        </ul>
-                </div>
-            </a>    
-        );
-    })}
+      return (
+        <a href={project.link} target="_blank" class="no-underline">
+          <div class="card h-[100%] p-6 m-2 rounded-lg shadow-lg hover:shadow-2xl transition-all transform hover:scale-105 duration-200 hover:opacity-70">
+            <Image
+              src={imgSrc}
+              alt={`project-${project.id}`}
+              class="rounded"
+              loading={"eager"}
+            />
+            <h3 class="text-2xl font-semibold mb-4">{project.title}</h3>
+            <p
+              class={`${project.status == "completed" ? "bg-green-300 text-green-600" : "bg-yellow-300 text-yellow-600"} w-fit px-2 py-1 rounded-full mb-4 text-xs`}
+            >
+              {project.status}
+            </p>
+            <p class="mb-4">{project.desc}</p>
+            <ul class="flex flex-row justify-start gap-1 text-sm list-none">
+              {project.tools.map((tool) => {
+                return <li class="chip button rounded-md px-2 py-1">{tool}</li>;
+              })}
+            </ul>
+          </div>
+        </a>
+      );
+    })
+  }
 </div>

@@ -1,50 +1,68 @@
 ---
-  import { education } from "../../public/education.json"
+import { education } from "../../public/education.json";
 ---
+
 <section class="max-w-2xl mx-auto p-6 relative">
-  <div class="absolute top-0 left-1/2 w-1 h-full transform -translate-x-1/2"></div>
-  <div class="relative pl-4">
-    {education
-      .sort((a, b) => {
-        const dateA = new Date(`${a.year} ${a.month}`);
-        const dateB = new Date(`${b.year} ${b.month}`);
-        return dateB.getTime() - dateA.getTime();
-      })
-      .map((e, index) => (
-        <div class={`relative flex items-center ${index % 2 === 0 ? "justify-start" : "justify-end"} pb-6 transition-all duration-200 hover:scale-105`}>
-          {/* Card */}
-          <div class="w-3/4 p-4 card shadow-md rounded-md">
-            <h3 class="text-lg font-semibold">
-              {e.title}{" "}
-              <p class="text-xs w-fit border rounded-md px-1">
-                {e.category}
+  <!-- Línea del timeline SOLO desktop -->
+  <div
+    class="hidden md:block absolute top-0 left-1/2 w-1 h-full bg-gray-300 dark:bg-gray-700 transform -translate-x-1/2"
+  >
+  </div>
+
+  <div class="relative space-y-6">
+    {
+      education
+        .sort((a, b) => {
+          const dateA = new Date(`${a.year} ${a.month}`);
+          const dateB = new Date(`${b.year} ${b.month}`);
+          return dateB.getTime() - dateA.getTime();
+        })
+        .map((e, index) => (
+          <div
+            class={`relative flex justify-center md:items-start
+            ${index % 2 === 0 ? "md:justify-start" : "md:justify-end"}
+            transition-all duration-200 hover:scale-[1.02]`}
+          >
+            {/* Card */}
+            <div class="w-full md:w-3/4 p-4 card shadow-md rounded-md">
+              <h3 class="text-lg font-semibold flex flex-wrap items-center gap-2">
+                {e.title}
+                <span class="text-xs border rounded-md px-2 py-0.5">
+                  {e.category}
+                </span>
+              </h3>
+
+              <p class="text-sm opacity-80">
+                {e.month} – {e.year}
               </p>
-            </h3>
-            <p class="text-sm">{e.month} - {e.year}</p>
-            <div class="mt-2">
-              <h4 class="text-md font-medium">Description</h4>
-              <ul class="list-disc pl-4 text-sm">{e.desc}</ul>
-            </div>
 
-            <div class="mt-2">
-              <h4 class="text-md font-medium">Aptness</h4>
-              <ul class="list-disc pl-4 text-sm grid sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3 gap-2">
-                {e.aptness.map((item) => (
-                  <li>{item}</li>
-                ))}
-              </ul>
-            </div>
+              <div class="mt-2">
+                <h4 class="text-md font-medium">Description</h4>
+                <ul class="list-disc pl-4 text-sm">{e.desc}</ul>
+              </div>
 
-            <div class="mt-4 flex flex-wrap gap-2">
-              <button class="button px-9 py-2 transition-all duration-100 rounded-md">
-                <a href={`${import.meta.env.BASE_URL}${e.pdf}`} target="_blank" class="text-sm mx-auto flex items-center gap-2">
+              <div class="mt-2">
+                <h4 class="text-md font-medium">Aptness</h4>
+                <ul class="list-disc pl-4 text-sm grid sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-4">
+                  {e.aptness.map((item) => (
+                    <li>{item}</li>
+                  ))}
+                </ul>
+              </div>
+
+              <div class="mt-4 flex flex-wrap gap-2">
+                <a
+                  href={`${import.meta.env.BASE_URL}${e.pdf}`}
+                  target="_blank"
+                  class="button px-9 py-2 rounded-md flex items-center gap-2 text-sm"
+                >
                   Open PDF
-                  <span class="icon-[prime--file-pdf] text-3xl"></span>
+                  <span class="icon-[prime--file-pdf] text-3xl" />
                 </a>
-              </button>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))
+    }
   </div>
 </section>
