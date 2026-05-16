@@ -1,6 +1,8 @@
 ---
 import { Icon } from 'astro-icon/components';
 import localData from '../data/home.json';
+import { resolveAssetImage } from '../utils/images';
+import { Image } from 'astro:assets';
 
 //Data Definitions
 interface Social {
@@ -37,17 +39,29 @@ if (isApiLive && BASE_URL) {
 }
 
 const { name, photoUrl, intro, introHtml, resumeUrl, socials } = data;
+const profileImage = await resolveAssetImage(photoUrl);
 ---
 
 <section id="home" class="flex flex-col items-center justify-center section-container md:pt-30 gap-1 min-h-[80vh] text-center">
   <div class="relative group mb-2 reveal-content" style="animation-delay: 100ms;">
     <div class="balloon-float w-20 h-20 md:w-24 md:h-24 rounded-full border-2 border-accent overflow-hidden shadow-[0_0_50px_color-mix(in_srgb,var(--color-accent)_33%,transparent)]">
-      <img 
-        src={photoUrl}
-        alt={name}
-        onerror="this.onerror=null;this.src='/placeholder.jpeg';"
-        class="w-full h-full object-cover scale-110" 
-      />
+      <!-- Use Astro Image tag for optimization, fallback to img-->
+      {profileImage ? (
+        <Image
+          src={profileImage}
+          alt={name}
+          class="w-full h-full object-cover scale-110"
+          loading="eager"
+        />
+      ) : (
+        <img
+          src={photoUrl || "/placeholder.jpeg"}
+          alt={name}
+          class="w-full h-full object-cover scale-110"
+          onerror="this.onerror=null;this.src='/placeholder.jpeg';"
+          loading="eager"
+        />
+      )}
     </div>
     <div class="balloon-float absolute -z-10 top-0 left-0 w-full h-full bg-accent rounded-full blur-[80px] opacity-20"></div>
   </div>
