@@ -1,35 +1,32 @@
 {
   "categories": [
     {
-      "title": "Mobile Development",
-      "skills": [
-        { "name": "Flutter", "level": 3, "icon": "skill-icons:flutter-dark" },
-        { "name": "Dart", "level": 3, "icon": "skill-icons:dart-dark" },
-        { "name": "Kotlin", "level": 1, "icon": "skill-icons:kotlin-dark" }
-      ]
-    },
-    {
       "title": "Frontend",
       "skills": [
         { "name": "Astro", "level": 2, "icon": "skill-icons:astro" },
-        { "name": "HTML", "level": 2, "icon": "skill-icons:html" },
+        { "name": "HTML", "level": 3, "icon": "skill-icons:html" },
         { "name": "CSS", "level": 2, "icon": "skill-icons:css" },
-        { "name": "Tailwind CSS", "level": 1, "icon": "skill-icons:tailwindcss-dark" }
-      ]
-    },
-    {
-      "title": "Backend",
-      "skills": [
-        { "name": "FastAPI", "level": 2, "icon": "skill-icons:fastapi" },
-        { "name": "Python", "level": 2, "icon": "skill-icons:python-dark" },
-        { "name": "Firebase", "level": 3, "icon": "vscode-icons:file-type-firebase" }
+        { "name": "Tailwind CSS", "level": 2, "icon": "skill-icons:tailwindcss-dark" },
+        { "name": "JavaScript", "level": 2, "icon": "skill-icons:javascript" },
+        { "name": "TypeScript", "level": 1, "icon": "skill-icons:typescript" },
+        { "name": "React", "level": 2, "icon": "skill-icons:react-dark" },
+        { "name": "Bun", "level": 1, "icon": "skill-icons:bun-dark" },
+        { "name": "Git", "level": 2, "icon": "skill-icons:git" }
       ]
     },
     {
       "title": "Database",
       "skills": [
-        { "name": "SQLite", "level": 3, "icon": "skill-icons:sqlite" },
-        { "name": "PostgreSQL", "level": 2, "icon": "skill-icons:postgresql-dark" }
+        { "name": "MySQL", "level": 2, "icon": "skill-icons:mysql-dark" }
+      ]
+    },
+    {
+      "title": "Other",
+      "skills": [
+        { "name": "Linux", "level": 2, "icon": "skill-icons:linux-dark" },
+        { "name": "Bash", "level": 1, "icon": "skill-icons:bash-dark" },
+        { "name":"C++", "level": 1, "icon": "skill-icons:cpp" },
+        {"name": "Figma", "level": 2, "icon":"skill-icons:figma-dark"}
       ]
     }
   ]

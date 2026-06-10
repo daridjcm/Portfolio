@@ -1,72 +1,33 @@
 {
-  "name": "John Doe",
-  "photoUrl": "favicon.svg",
-  "intro": "A brief, compelling introduction about who you are and what you do. Mention your core philosophy, your passion for building digital products, and your drive for creating efficient, high-impact solutions.",
-  "introHtml": "A brief, compelling introduction about who you are and what you do. Mention your core <span class='text-white font-bold'>philosophy</span>, your passion for building digital products, and your drive for creating <span class='text-white font-bold'>efficient</span>, <span class='text-white font-bold'>high-impact</span> solutions.",
-  "webpageTitle": "John Doe",
-  "resumeUrl": "https://example-files.online-convert.com/document/pdf/example.pdf",
-
-  "_comment": "Add your social links below. Leave the 'url' empty to hide the icon. Set 'showInContact' to true or false to control if it appears in the Contact section.",
+  "name": "Dariana Correa",
+  "photoUrl": "id0.jpeg",
+  "intro": "Una estudiante de ingeniería de sistemas apasionada por la tecnología y el desarrollo de software. Creo plenamente en el poder de la tecnología para transformar vidas y resolver problemas complejos y que el diseño de software debe ser intuitivo, eficiente y centrado en el usuario.",
+  "webpageTitle": "Dariana Correa",
+  "resumeUrl": "/CV.pdf",
   "socials": [
     {
       "name": "GitHub",
-      "url": "https://github.com/[YOUR_USER_NAME]",
+      "url": "https://github.com/daridjcm",
       "icon": "mdi:github",
       "showInContact": true
     },
     {
       "name": "LinkedIn",
-      "url": "https://linkedin.com/in/[YOUR_USER_NAME]",
+      "url": "https://linkedin.com/in/daridjcm",
       "icon": "mdi:linkedin",
       "showInContact": true
     },
     {
-      "name": "Leetcode",
-      "url": "#",
-      "icon": "devicon-plain:leetcode",
-      "showInContact": false
-    },
-    {
-      "name": "Behance",
-      "url": "#",
-      "icon": "devicon-plain:behance",
-      "showInContact": false
-    },
-    {
       "name": "Email",
-      "url": "mailto:your-mail@example.com",
+      "url": "mailto:cdarianamedina@gmail.com",
       "icon": "mdi:email",
       "showInContact": true
     },
     {
       "name": "Whatsapp",
-      "url": "https://wa.me/[YOUR_WHATSAPP_NUMBER]",
+      "url": "https://wa.me/573011475852",
       "icon": "mdi:whatsapp",
       "showInContact": true
-    },
-    {
-      "name": "Facebook",
-      "url": "#",
-      "icon": "mdi:facebook",
-      "showInContact": false
-    },
-    {
-      "name": "Messenger",
-      "url": "#",
-      "icon": "mdi:facebook-messenger",
-      "showInContact": true
-    },
-    {
-      "name": "Instagram",
-      "url": "#",
-      "icon": "mdi:instagram",
-      "showInContact": false
-    },
-    {
-      "name": "Twitter",
-      "url": "#",
-      "icon": "mdi:twitter",
-      "showInContact": false
     }
   ]
 }

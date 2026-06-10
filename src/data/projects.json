@@ -1,20 +1,29 @@
 [
   {
-    "title": "Awesome Website",
-    "description": "A high-performance, SEO-optimized web application built with modern frameworks to showcase technical expertise.",
-    "images": ["astro-01.webp", "astro-02.jpeg"],
-    "tech": ["Astro", "Tailwind"],
+    "title": "Todo List Web App",
+    "description": "Un proyecto de aplicación web de lista de tareas desarrollado colaborativamente con React y Tailwind CSS, utilizando una API REST para la gestión de datos.",
+    "images": ["id1.png"],
+    "tech": ["React", "Tailwind"],
     "platforms": ["web"],
-    "link": "https://astro.build/themes/details/career-portfolio-data-driven-astro-ssg/",
-    "category": "Published Website"
+    "link": "https://github.com/daridjcm/todo-list-app",
+    "category": "Hobby"
   },
   {
-    "title": "Demo Mobile App",
-    "description": "A high-performance mobile application built with modern frameworks to showcase technical expertise.",
-    "images": ["astro-02.jpeg", "#"],
-    "tech": ["Flutter", "Dart", "REST API"],
-    "platforms": ["apple-ios", "android"],
-    "link": "https://github.com/nbakh16/career-portfolio-template",
+    "title": "Deyla Shop Web App",
+    "description": "Un proyecto de aplicación web de comercio electrónico desarrollado con Astro, Tailwind CSS y React, utilizando una API REST para la gestión de productos y pedidos.",
+    "images": ["id2.png"],
+    "tech": ["Astro", "Tailwind CSS", "React"],
+    "platforms": ["web"],
+    "link": "https://github.com/daridjcm/deylashop",
+    "category": "Hobby"
+  },
+  {
+    "title": "7-Day Weather Forecast",
+    "description": "Una aplicación web de clima desarrollada con HTML, CSS y JavaScript, utilizando una API de clima de ciudades europeas para mostrar información meteorológica en tiempo real.",
+    "images": ["id3.png"],
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "platforms": ["web"],
+    "link": "https://github.com/daridjcm/weather2",
     "category": "Hobby"
   }
 ]

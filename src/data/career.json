@@ -1,26 +1,10 @@
 [
   {
-    "company": "Demo Company",
-    "role": "Lead Software Engineer",
-    "period": "Oct 2025 - Present",
-    "type": "Full time job",
-    "description": "Leading cross-platform mobile development using Flutter and FastAPI. Focused on scalable system design and high-performance data processing.",
-    "skills": ["Leading", "Collaboration"]
-  },
-  {
-    "company": "Demo Company",
-    "role": "Full-stack Developer",
-    "period": "Sep 2023 - Sep 2025",
-    "type": "Full time job",
-    "description": "Specializing in Business Research Methods and Strategic HRM. Applying analytical frameworks to human capital management.",
-    "skills": ["React", "Node.js", "PostgreSQL", "Docker"]
-  },
-  {
-    "company": "Demo University of Tech",
-    "role": "BSc in Computer Science",
-    "period": "Jun 2020 - Jun 2024",
-    "type": "Student",
-    "description": "Specializing in Business Research Methods and Strategic HRM. Applying analytical frameworks to human capital management.",
-    "skills": ["C++", "OOP", "Problem Solving"]
+    "company": "Kinderlandia S.A.S",
+    "role": "Practicante en Creación de Contenido Audiovisual",
+    "period": "Junio 2025 - Diciembre 2025",
+    "type": "Tiempo completo",
+    "description": "Responsable de la creación de contenido audiovisual en la creación, edición y la ilustración. Colaboré con el equipo de marketing para desarrollar campañas creativas y atractivas.",
+    "skills": ["Edición", "Ilustración", "Trabajo en equipo", "Creatividad"]
   }
 ]
