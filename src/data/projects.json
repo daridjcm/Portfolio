@@ -3,7 +3,7 @@
     "title": "Todo List Web App",
     "description": "Un proyecto de aplicación web de lista de tareas desarrollado colaborativamente con React y Tailwind CSS, utilizando una API REST para la gestión de datos.",
     "images": ["id1.png"],
-    "tech": ["React", "Tailwind"],
+    "tech": ["React", "Tailwind CSS"],
     "platforms": ["web"],
     "link": "https://github.com/daridjcm/todo-list-app",
     "category": "Hobby"
