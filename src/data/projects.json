@@ -1,29 +1,47 @@
 [
   {
-    "title": "Todo List Web App",
-    "description": "Un proyecto de aplicación web de lista de tareas desarrollado colaborativamente con React y Tailwind CSS, utilizando una API REST para la gestión de datos.",
+    "title": "Todo List App",
+    "description": "Creada para recordar tareas simples de manera rápida y eficiente. Su diseño se centra en la simplicidad, evitando funcionalidades excesivas.",
     "images": ["id1.png"],
     "tech": ["React", "Tailwind CSS"],
     "platforms": ["web"],
-    "link": "https://github.com/daridjcm/todo-list-app",
-    "category": "Hobby"
+    "link": "https://notes-list-app.vercel.app/",
+    "category": "finalizado"
   },
   {
-    "title": "Deyla Shop Web App",
-    "description": "Un proyecto de aplicación web de comercio electrónico desarrollado con Astro, Tailwind CSS y React, utilizando una API REST para la gestión de productos y pedidos.",
+    "title": "Deyla Shop",
+    "description": "Muestra productos (muebles, comidas, perfumes) detalles del producto y una página de carrito de compra.",
     "images": ["id2.png"],
     "tech": ["Astro", "Tailwind CSS", "React"],
     "platforms": ["web"],
-    "link": "https://github.com/daridjcm/deylashop",
-    "category": "Hobby"
+    "link": "https://deyla-shop.vercel.app/",
+    "category": "finalizado"
   },
   {
-    "title": "7-Day Weather Forecast",
-    "description": "Una aplicación web de clima desarrollada con HTML, CSS y JavaScript, utilizando una API de clima de ciudades europeas para mostrar información meteorológica en tiempo real.",
+    "title": "¿Qué tiempo es hoy?",
+    "description": "Una aplicación web de clima desarrollada para mostrar información meteorológica en tiempo real.",
     "images": ["id3.png"],
-    "tech": ["HTML", "CSS", "JavaScript"],
+    "tech": ["HTML", "CSS", "JavaScript", "Vite"],
     "platforms": ["web"],
-    "link": "https://github.com/daridjcm/weather2",
-    "category": "Hobby"
+    "link": "https://daridjcm.github.io/clima/",
+    "category": "finalizado"
+  }, 
+  {
+    "title": "LifeSIM",
+    "description": "Simular el comportamiento de la vida humana mediante eventos y interacciones.",
+    "images": ["id4.png"],
+    "tech": ["React", "Tailwind CSS", "MariaDB", "Express"],
+    "platforms": ["web"],
+    "link": "https://github.com/daridjcm/lifesim-v2",
+    "category": "en desarrollo"
+  },
+  {
+    "title": "StyliShoes",
+    "description": "Comprar y vender zapatos con estilo. Cuenta con una interfaz para mostrar la marca, productos, carrito y adicional añadir productos a la colección.",
+    "images": ["astro-02.jpeg"],
+    "tech": ["Bootstrap"],
+    "platforms": ["web"],
+    "link": "https://ecommerce-one-rust.vercel.app/",
+    "category": "en desarrollo"
   }
 ]
