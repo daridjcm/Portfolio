@@ -38,10 +38,10 @@
   {
     "title": "StyliShoes",
     "description": "Comprar y vender zapatos con estilo. Cuenta con una interfaz para mostrar la marca, productos, carrito y adicional añadir productos a la colección.",
-    "images": ["astro-02.jpeg"],
-    "tech": ["Bootstrap"],
+    "images": ["id5.png"],
+    "tech": ["HTML", "CSS", "JavaScript", "MySQL/MariaDB"],
     "platforms": ["web"],
-    "link": "https://ecommerce-one-rust.vercel.app/",
-    "category": "en desarrollo"
+    "link": "https://github.com/daridjcm/stylishoes",
+    "category": "finalizado (solo funciona local)" 
   }
 ]
