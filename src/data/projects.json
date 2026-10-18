@@ -9,24 +9,6 @@
     "category": "finalizado"
   },
   {
-    "title": "Deyla Shop",
-    "description": "Muestra productos (muebles, comidas, perfumes) detalles del producto y una página de carrito de compra.",
-    "images": ["id2.png"],
-    "tech": ["Astro", "Tailwind CSS", "React"],
-    "platforms": ["web"],
-    "link": "https://deyla-shop.vercel.app/",
-    "category": "finalizado"
-  },
-  {
-    "title": "¿Qué tiempo es hoy?",
-    "description": "Una aplicación web de clima desarrollada para mostrar información meteorológica en tiempo real.",
-    "images": ["id3.png"],
-    "tech": ["HTML", "CSS", "JavaScript", "Vite"],
-    "platforms": ["web"],
-    "link": "https://daridjcm.github.io/clima/",
-    "category": "finalizado"
-  }, 
-  {
     "title": "LifeSIM",
     "description": "Simular el comportamiento de la vida humana mediante eventos y interacciones.",
     "images": ["id4.png"],
@@ -37,11 +19,11 @@
   },
   {
     "title": "StyliShoes",
-    "description": "Comprar y vender zapatos con estilo. Cuenta con una interfaz para mostrar la marca, productos, carrito y adicional añadir productos a la colección.",
+    "description": "Comprar y vender zapatos con estilo. Interfaz intuitiva, brinda informacion del negocio, lista los productos y permite operaciones de CRUD.",
     "images": ["id5.png"],
     "tech": ["HTML", "CSS", "JavaScript", "MySQL/MariaDB"],
     "platforms": ["web"],
     "link": "https://github.com/daridjcm/stylishoes",
-    "category": "finalizado (solo funciona local)" 
+    "category": "mejorando seguridad..." 
   }
 ]
